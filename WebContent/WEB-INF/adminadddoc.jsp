@@ -77,25 +77,7 @@ body {
 	<div class="row">
 
 	<div class="col-xs-6 col-sm-3 sidebar-offcanvas"  role="navigation">
-	<nav class="navbar">
-    <div class="sidebar-nav">
-        <ul class="nav">
-            <li><a href="admin">Thông tin cá nhân</a></li>
-            <li><a href="admincp">Đổi mật khẩu</a></li>
-            <li class="nav-divider"></li>
-            <li><a href="adminmc">Danh sách minh chứng</a></li>
-            <li><a href="adminadddoc">Thêm minh chứng</a></li> 
-            <li class="nav-divider"></li>
-            <li><a href="admintt">Danh sách tin tức</a></li>
-            <li><a href="adminadd">Viết bài mới</a></li>
-            <c:if test="${account.role > 5 }">
-            <li class="nav-divider"></li>
-            <li><a href="adminac">Danh sách tài khoản</a></li>
-            <li><a href="adminaddac">Thêm tài khoản</a></li>            
-            </c:if>
-        </ul>
-    </div>
-	</nav>
+		<%@ include file="wa_admintool.jsp" %>
     </div>
 	
 	<div class="col-sm-9 col-md-9 col-xs-12">
